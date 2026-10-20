@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project X - Landing Page</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ==================== RELOAD OVERLAY ==================== -->
+<div id="reloadOverlay" style="display: none;">
+    <div class="reload-container">
+        <div class="dotted-spinner"></div>
+        <p class="reload-text">Reloading...</p>
+    </div>
+</div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo" id="logoBtn" style="cursor: pointer;">Project <span>X</span></div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <!-- Search Bar -->
+                <li>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search..." id="searchInput" />
+                        <button id="searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                </li>
+
+                <!-- Login & Register Buttons -->
+                <li class="nav-buttons">
+                    <a href="#" class="btn btn-login" id="loginBtn">Login</a>
+                    <a href="#" class="btn btn-register" id="registerBtn">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Build Better with <span>Project X</span></h1>
+            <p>
+                The all-in-one platform for teams to collaborate, manage tasks,
+                and bring ideas to life. Start your 30-day free trial today!
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary" id="getStartedBtn">🚀 Get Started</a>
+                <a href="#features" class="btn btn-outline">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span>Project X</span>?</h2>
+            <p class="section-subtitle">
+                Everything you need to manage projects, collaborate with your team,
+                and deliver outstanding results.
+            </p>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Collaboration</h3>
+                    <p>Work together seamlessly with real-time messaging, file sharing, and collaborative editing.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Task Management</h3>
+                    <p>Track progress with Kanban boards, deadlines, and priority levels for every task.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Mentor Monitoring</h3>
+                    <p>Get expert guidance with built-in mentor tools for reviews, feedback, and coaching.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <i class="fas fa-upload"></i>
+                    <h3>File Upload</h3>
+                    <p>Share documents, images, and assets instantly with secure cloud storage integration.</p>
+                </div>
+
+                <!-- Feature 5 (Bonus) -->
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Gain insights with real-time reports, productivity metrics, and performance tracking.</p>
+                </div>
+
+                <!-- Feature 6 (Bonus) -->
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Ready</h3>
+                    <p>Access your projects from anywhere with our fully responsive mobile-optimized platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING SECTION ==================== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple & <span>Transparent</span> Pricing</h2>
+            <p class="section-subtitle">
+                Choose the plan that fits your needs. Start with a 30-day free trial — no credit card required.
+            </p>
+
+            <div class="pricing-grid">
+                <!-- Pricing Card 1: Free Trial -->
+                <div class="pricing-card">
+                    <h3>Free Trial</h3>
+                    <div class="price">$0 <span>/ 30 days</span></div>
+                    <p>Perfect for getting started</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 30-day full access</li>
+                        <li><i class="fas fa-check"></i> Up to 5 team members</li>
+                        <li><i class="fas fa-check"></i> 1 project</li>
+                        <li><i class="fas fa-check"></i> Basic support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Start Free Trial</a>
+                </div>
+
+                <!-- Pricing Card 2: Credits Plan (Popular) -->
+                <div class="pricing-card popular">
+                    <h3>Credits Plan</h3>
+                    <div class="price">₹1 <span>/ Credit</span></div>
+                    <p>Pay as you go — 1 Credit = 1 Day Access for 1 Project</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Flexible daily access</li>
+                        <li><i class="fas fa-check"></i> No monthly commitment</li>
+                        <li><i class="fas fa-check"></i> Unlimited team members</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Buy Credits</a>
+                </div>
+
+                <!-- Pricing Card 3: Enterprise -->
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <p>For large organizations</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited projects</li>
+                        <li><i class="fas fa-check"></i> Advanced security</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> 24/7 premium support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div>
+                    <span class="logo">Project <span>X</span></span>
+                    <p>Empowering teams to build better projects, faster. Join thousands of happy users worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Product -->
+                <div>
+                    <h4>Product</h4>
+                    <a href="#features">Features</a><br />
+                    <a href="#pricing">Pricing</a><br />
+                    <a href="#">Integrations</a><br />
+                    <a href="#">Changelog</a>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div>
+                    <h4>Company</h4>
+                    <a href="#">About Us</a><br />
+                    <a href="#">Careers</a><br />
+                    <a href="#">Blog</a><br />
+                    <a href="#">Contact</a>
+                </div>
+
+                <!-- Column 4: Resources -->
+                <div>
+                    <h4>Resources</h4>
+                    <a href="#">Help Center</a><br />
+                    <a href="#">Community</a><br />
+                    <a href="#">Status</a><br />
+                    <a href="#">Terms & Privacy</a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                &copy; 2026 Project X. All rights reserved. Made with ❤️ by Team X.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
