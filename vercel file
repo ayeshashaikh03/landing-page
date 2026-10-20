@@ -1,0 +1,35 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "app": {
+      "root": ".",
+      "runtime": "node"
+    },
+    "project-x": {
+      "root": "project-x",
+      "framework": "create-react-app"
+    },
+    "backend": {
+      "root": "project-x/backend",
+      "framework": "express"
+    },
+    "projectx-react-app": {
+      "root": "project-x/projectx-react-app",
+      "framework": "create-react-app"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "backend"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "app"
+      }
+    }
+  ]
+}
